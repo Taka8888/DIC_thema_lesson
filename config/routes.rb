@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :blogs
+  resources :blogs do
+  end
   root 'top#index'
 
   devise_for :users
