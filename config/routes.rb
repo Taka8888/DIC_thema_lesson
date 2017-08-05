@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  resources :contacts, only: [:new, :create]
+
   resources :blogs
   root 'top#index'
 
